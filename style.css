@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+  }
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+img{
+    width: 80px;
+    position: absolute;
+    animation: float;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+        filter: hue-rotate(360deg);
+    }
+}
